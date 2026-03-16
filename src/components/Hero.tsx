@@ -8,18 +8,18 @@ export default function Hero() {
     <section className="bg-[#f37021] text-white px-4 sm:px-8 py-12 md:py-20 overflow-hidden">
       <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-[55%] z-10 md:pr-8 text-center md:text-left">
-          <h1 className="text-[40px] sm:text-[48px] md:text-[40px] font-bold mb-4 leading-[1.1] tracking-tight">Buy and sell<br className="hidden sm:block"/> custom products</h1>
-          <p className="text-[18px] sm:text-[20px] md:text-lg mb-8 font-medium">Free worldwide shipping. Fast turnaround. 24/7 support.</p>
+          <h1 className="text-3xl sm:text-[48px] md:text-[40px] font-bold mb-4 leading-[1.1] tracking-tight">Buy and sell<br className="hidden sm:block"/> custom products</h1>
+          <p className="text-base sm:text-[20px] md:text-lg mb-8 font-medium">Free worldwide shipping. Fast turnaround. 24/7 support.</p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center md:justify-start">
             <button 
               onClick={() => navigate('/marketplace')}
-              className="bg-[#0066cc] hover:bg-[#005bb5] text-white px-8 py-3.5 md:px-7 lg:px-8 md:py-2.5 lg:py-3.5 rounded text-lg md:text-base lg:text-lg font-bold transition-colors w-full sm:w-auto"
+              className="bg-[#0066cc] hover:bg-[#005bb5] text-white px-8 py-3.5 md:px-7 lg:px-8 md:py-2.5 lg:py-3.5 rounded text-base md:text-base lg:text-lg font-bold transition-colors w-full sm:w-auto"
             >
               Shop now
             </button>
             <button 
-              onClick={() => navigate('/signup')}
-              className="bg-[#cc5a1b] hover:bg-[#b85118] text-white px-8 py-3.5 md:px-7 lg:px-8 md:py-2.5 lg:py-3.5 rounded text-lg md:text-base lg:text-lg font-bold transition-colors w-full sm:w-auto"
+              onClick={() => navigate('/marketplace')}
+              className="bg-[#cc5a1b] hover:bg-[#b85118] text-white px-8 py-3.5 md:px-7 lg:px-8 md:py-2.5 lg:py-3.5 rounded text-base md:text-base lg:text-lg font-bold transition-colors w-full sm:w-auto"
             >
               Start selling
             </button>

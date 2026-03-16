@@ -77,8 +77,8 @@ export default function Samples() {
       <section className="bg-[#f4f4f4] py-12 md:py-20 px-4">
         <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-            <h1 className="text-3xl md:text-[40px] font-bold text-[#333333] mb-4 leading-tight">Sample pack for $1</h1>
-            <p className="text-[#555555] mb-6 text-[16px] md:text-[18px]">Each pack contains stickers, labels, and magnets.<br className="hidden md:block"/>Free shipping</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4 leading-tight">Sample pack for $1</h1>
+            <p className="text-[#555555] mb-6 text-base md:text-base">Each pack contains stickers, labels, and magnets.<br className="hidden md:block"/>Free shipping</p>
             <button 
               onClick={() => addToCart({
                 name: 'Sample pack',
@@ -104,7 +104,7 @@ export default function Samples() {
         <div className="max-w-[1000px] mx-auto">
           <h2 className="text-[24px] md:text-[32px] font-bold text-center text-[#333333] mb-12 md:mb-16">Or, get custom samples using your artwork.</h2>
           
-          <div className="flex flex-wrap justify-center gap-x-4 md:gap-x-8 gap-y-12">
+          <div className="flex flex-wrap justify-center gap-x-4 md:gap-x-4 gap-y-8">
             {samples.map((product) => (
               <Link 
                 key={product.id} 
