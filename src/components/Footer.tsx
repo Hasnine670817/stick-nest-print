@@ -82,7 +82,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#f4f4f4] pt-12 md:pt-16 pb-8 md:pb-12 px-4 mt-auto">
+    <footer className="bg-[#F1F1F1] pt-12 md:pt-16 pb-8 md:pb-12 px-4 mt-auto">
       <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mb-12 md:mb-16">
           <div>

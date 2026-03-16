@@ -74,7 +74,7 @@ export default function Samples() {
   return (
     <div className="w-full bg-white">
       {/* Hero */}
-      <section className="bg-[#f4f4f4] py-12 md:py-20 px-4">
+      <section className="bg-[#EFEFEF] pt-8 md:pt-8 px-4">
         <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4 leading-tight">Sample pack for $1</h1>
@@ -82,7 +82,7 @@ export default function Samples() {
             <button 
               onClick={() => addToCart({
                 name: 'Sample pack',
-                image: 'https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+                image: 'https://i.ibb.co.com/wNd109qW/sample-pack.png',
                 size: 'Standard',
                 quantity: 1,
                 pricePerUnit: 1,
@@ -94,7 +94,7 @@ export default function Samples() {
             </button>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end">
-            <img src="https://images.unsplash.com/photo-1572375992501-4b0892d50c69?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sample Pack" className="max-w-full h-auto object-contain drop-shadow-2xl mix-blend-multiply" />
+            <img src="https://i.ibb.co.com/PvJkNhF4/samples.jpg" alt="Sample Pack" className="max-w-full h-auto object-contain" />
           </div>
         </div>
       </section>

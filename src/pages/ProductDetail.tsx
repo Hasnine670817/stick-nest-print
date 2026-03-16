@@ -64,32 +64,35 @@ export default function ProductDetail() {
   };
 
   return (
-    <div className="max-w-[1100px] mx-auto p-4 md:py-12 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div className="max-w-[1100px] mx-auto p-4 md:py-12 md:px-8 grid grid-cols-1 md:grid-cols-[auto_315px] gap-12">
       {/* Left Side: Product Info & Image */}
       <div>
-        <h1 className="text-4xl font-bold text-[#333333] mb-2">{title}</h1>
-        <div className="flex items-center mb-4">
-          {[...Array(5)].map((_, i) => (
-            <Star key={i} className="w-5 h-5 text-[#ffc107] fill-current" />
-          ))}
-          <span className="ml-2 font-bold text-[#333333]">89,122 reviews</span>
+        <div className="flex flex-wrap gap-3 items-center mb-4">
+          <h1 className="text-3xl font-bold text-[#333333]">{title}</h1>
+          <div className="flex items-center">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 mx-[1px] text-[#ffc107] fill-current" />
+            ))}
+            <span className="ml-2 text-sm font-bold text-[#333333]">89,122 reviews</span>
+          </div>
         </div>
         <p className="text-[#333333] mb-6">
           Custom {title?.toLowerCase() || 'products'} are a fast and easy way to promote your business, brand, or event. Perfect for laptops, water bottles, and more. Thick, durable vinyl protects your stickers from scratches, water, and sunlight. They’re even dishwasher safe.
         </p>
+        <button type="button" className="text-sm py-1 px-2 border border-[#D2D2D2] hover:bg-[#E8E8E8] rounded-sm bg-white font-semibold">Order samples</button>
         <img src={image} alt={title} className="w-full rounded-xl" />
       </div>
 
       {/* Right Side: Configuration Panel */}
-      <div className="border border-gray-200 rounded-lg p-6 h-fit">
+      <div className="border bg-white border-gray-200 rounded-lg p-6 h-fit [box-shadow:0_0_0_5px_rgba(0,0,0,.15)]">
         <div className="mb-8">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-bold text-[#333333]">Select a size</h2>
-            <button className="text-sm text-[#0066cc] font-bold hover:underline">Size help</button>
+            <button className="text-xs text-[#0066cc] font-bold hover:underline">Size help</button>
           </div>
           {sizes.map((size) => (
             <div key={size.name}>
-              <label className="flex items-center mb-2 cursor-pointer">
+              <label className="flex items-center mb-2 cursor-pointer text-sm">
                 <input
                   type="radio"
                   name="size"
@@ -126,7 +129,7 @@ export default function ProductDetail() {
           <h2 className="text-lg font-bold text-[#333333] mb-4">Select a quantity</h2>
           <div className="space-y-2">
             {quantities.map((qty) => (
-              <label key={qty.amount} className="flex items-center justify-between mb-2 cursor-pointer hover:bg-gray-50 p-1 rounded">
+              <label key={qty.amount} className="flex items-center justify-between mb-2 cursor-pointer hover:bg-gray-50 p-1 rounded text-sm">
                 <div className="flex items-center">
                   <input
                     type="radio"

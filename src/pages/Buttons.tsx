@@ -93,9 +93,9 @@ export default function Buttons() {
               <span className="font-bold">Free shipping</span>
             </div>
           </div>
-          <Link to="/samples" className="bg-[#e0661e] hover:bg-[#d45b19] transition-colors text-white px-6 py-2.5 rounded font-bold text-[15px]">
+          {/* <Link to="/samples" className="bg-[#e0661e] hover:bg-[#d45b19] transition-colors text-white px-6 py-2.5 rounded font-bold text-[15px]">
             Get samples
-          </Link>
+          </Link> */}
         </div>
       </section>
 
@@ -111,16 +111,16 @@ export default function Buttons() {
                   state={{ image: product.image_url, name: product.name, price: product.price }}
                   className="flex flex-col items-center text-center group cursor-pointer rounded-xl py-4 px-4 hover:bg-[#E8E8E8] transition-all duration-300"
                 >
-                  <div className="w-full flex items-center justify-center mb-4">
+                  <div className="w-full flex items-center justify-center mb-2 max-w-[200px]">
                     <img 
                       src={product.image_url || 'https://picsum.photos/seed/placeholder/200/200'} 
                       alt={product.name} 
-                      className="w-full aspect-square object-cover rounded-xl border-[6px] border-white shadow-md group-hover:scale-105 transition-transform duration-300" 
+                      className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" 
                       referrerPolicy="no-referrer"
                     />
                   </div>
                   <span className="text-[15px] text-[#333333] font-medium">{product.name}</span>
-                  <span className="text-[13px] text-[#f37021] font-bold mt-1">From ${(product.price || 0).toFixed(2)}</span>
+                  {/* <span className="text-[13px] text-[#f37021] font-bold mt-1">From ${(product.price || 0).toFixed(2)}</span> */}
                 </Link>
               ))}
             </div>
